@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".ui.game.event.EventFragment">
+
+    <TextView
+            android:id="@+id/tvAwayTeamTitle"
+            style="@style/title_game_wizard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Time visitante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tvAwayTeamSubtitle"
+            style="@style/subtitle_game_wizard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Qual o time adversário?"
+            app:layout_constraintEnd_toEndOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvAwayTeamTitle" />
+
+    <EditText
+            android:id="@+id/inputAwayTeam"
+            style="@style/input_wizard"
+            android:layout_marginTop="32dp"
+            android:hint="Ex: Palmeiras"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvAwayTeamSubtitle" />
+
+    <Button
+            android:id="@+id/eventBtNext"
+            style="@style/custom_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="PRÓXIMO"
+            app:layout_constraintEnd_toEndOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvAwayTeamTitle"
+            app:layout_constraintTop_toBottomOf="@+id/inputAwayTeam" />
+</androidx.constraintlayout.widget.ConstraintLayout>
